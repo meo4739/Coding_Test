@@ -1,8 +1,4 @@
-
-q= []
-q.append((1,2))
-q.append((3,4))
-
-b,c = q.pop(0)
-print(b,c)
-print(q)
+width, height = map(int, input().split())
+# print(width, height)
+if width == 0 & height == 0:
+    print('clear')
