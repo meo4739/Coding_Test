@@ -1,7 +1,17 @@
 import sys
-sys.stdin = open('DFS, BFS\인프런_알고리즘_강의\부분집합\합이 같은 부분 집합.txt','r')
+sys.stdin = open('.\DFS, BFS\인프런_알고리즘_강의\부분집합\합이 같은 부분 집합.txt','r')
 
+def DFS(L, sum):
+    if sum > total//2:
+        return # 호출된 재귀함수를 종료하고 싶을 때는 return을 사용한다.
 
+    if L == n:
+        if sum ==(total-sum):
+            print("YES")
+            sys.exit(0)
+    else:
+        DFS(L+1, sum+a[L])
+        DFS(L+1, sum)
 
 n = int(input()) # 성분의 개수를 입력하자
 a = list(map( int, input().split() )) # 안에 있는 요소들을 출력하자.
