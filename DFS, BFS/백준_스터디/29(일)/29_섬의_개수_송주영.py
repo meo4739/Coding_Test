@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("input.txt", "r")
+sys.stdin = open("./DFS, BFS/백준_스터디/29(일)/number_island.txt", "r")
 
 while True: # 마지막 줄에 0, 0이 입력되기 전까지는 계속하여 입력받자.
 
