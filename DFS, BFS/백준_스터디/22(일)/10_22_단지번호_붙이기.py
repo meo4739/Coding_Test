@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("input.txt", "r")
+sys.stdin = open("./DFS, BFS/백준_스터디/22(일)/10_22_단지번호_붙이기.txt", "r")
 
 def bfs(a, b):
     q= []
