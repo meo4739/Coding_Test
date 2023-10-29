@@ -1,6 +1,8 @@
 import sys
 sys.stdin = open("./DFS, BFS/백준_스터디/29(일)/number_island.txt", "r")
 
+sys.setrecursionlimit(10**7)  
+
 dir = [(-1,0),(-1,1),(0,1),(1,1),(1,0),(1,-1),(0,-1),(-1,-1) ] # 위에서부터 시계 방향으로 탐색한다.
 
 def numland(width, height, space):
