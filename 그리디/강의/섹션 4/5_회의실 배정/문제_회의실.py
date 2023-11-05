@@ -1,15 +1,15 @@
 import sys
-sys.stdin = open('./그리디/강의/섹션 4/5_회의실 배정/회의실.txt','r')
+# sys.stdin = open('./그리디/강의/섹션 4/5_회의실 배정/회의실.txt','r')
 space = []
 
 for i in range(int(input() )):
     space.append(list(map( int, input().split())))
 
-print(space)
+# print(space)
 space.sort() # 첫 번째를 기준으로 정렬한다.
-print(space)
+# print(space)
 space.sort(key = lambda x : (x[1], x[0])  ) # 두 번째를 기준으로 정렬한다.
-print(space)
+# print(space)
 
 time = 0
 cnt = 0
