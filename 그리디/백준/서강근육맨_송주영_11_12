@@ -1,0 +1,29 @@
+import sys
+sys.stdin = open('./그리디/백준/서강.txt')
+
+n = int(input())
+kind = list(map(int, input().split()))
+kind.sort()
+space = []
+
+if len(kind)%2 != 0:
+    space.append(kind[-1])
+    kind.pop()
+
+    while kind:
+        space.append(kind[0]+kind[-1])
+        kind.pop(0)
+        kind.pop(-1)
+
+else:
+    while kind:
+        space.append(kind[0]+kind[-1])
+        kind.pop(0)
+        kind.pop(-1)
+
+print(max(space)) 
+# 실수했던 부분 min이 아니라 max를 써야한다.
+# 위의 알고리즘을 따르면 값들을 정렬하고 가장 작은 조합을 만들게 된다.
+# 만약 최종 결과가 3, 6, 3이라고 가정하자.
+# 만일, min을 하면 근손실이 3을 넘어가지는 않도록 하자는 말이 되고 6이 있기 때문에 말이 맞지 않는다.
+# 따라서 6이 넘어가지 않도록 해야한다가 맞기 때문에 max를 써야 한다.
