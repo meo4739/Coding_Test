@@ -15,4 +15,6 @@ while dq:
         cur = dq.popleft()
         dq.append(cur)
     dq.popleft()
-    
+    if len(dq) ==1:
+        print(dq[0])
+        dq.popleft()
