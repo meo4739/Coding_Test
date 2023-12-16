@@ -1,6 +1,10 @@
-a = [1,2,3]
+from collections import deque
+a = deque([1,2,3])
 
-a.pop(-1)
+print(a.pop())
 
-print(a.index(1))
+print(a)
 
+print(a.appendleft(a[-1]))
+
+print(a)
