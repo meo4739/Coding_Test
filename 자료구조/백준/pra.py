@@ -1,8 +1,6 @@
-from collections import deque
-a = deque([1,2,3])
-# a.pop()
-# print(a.pop())
-print(a.popleft())
-# print(a.pop())
+a = [1,2,3]
 
+a.pop(-1)
+
+print(a.index(1))
 
